@@ -1,10 +1,11 @@
+variable "aws_region" {
+  default = "us-east-1"
+}
+
 provider "aws" {
   region = var.aws_region
 }
 
-variable "aws_region" {
-  default = "us-east-1"
-}
 
 resource "aws_vpc" "main" {
   cidr_block = "10.0.0.0/16"
