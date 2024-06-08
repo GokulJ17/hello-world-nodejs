@@ -41,6 +41,10 @@ jobs:
 
     - name: Tag the commit
       if: success()
+      env:
+        PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
       run: |
-        git tag terraform-applied
-        git push origin terraform-applied
+        git config --global user.name "Gokul J"
+        git config --global user.email "gokulj1710@gmail.com"
+        git tag terraform-applied-${GITHUB_SHA::8}
+        git push origin terraform-applied-${GITHUB_SHA::8} --force-with-lease
