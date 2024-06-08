@@ -42,7 +42,5 @@ jobs:
     - name: Tag the commit
       if: success()
       run: |
-        git config --global user.name "Gokul J"
-        git config --global user.email "gokulj1710@gmail.com"
         git tag terraform-applied
         git push origin terraform-applied
