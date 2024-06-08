@@ -98,5 +98,4 @@ resource "aws_ecs_service" "hello_world" {
   }
 }
 
-
 data "aws_availability_zones" "available" {}
