@@ -2,8 +2,8 @@ name: Deploy to ECS
 
 on:
   push:
-    tags:
-      - terraform-applied
+    branches:
+      - main
 
 jobs:
   deploy:
