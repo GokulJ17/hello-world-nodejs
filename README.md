@@ -3,7 +3,7 @@
 This repository contains Terraform scripts and GitHub Actions configuration for setting up a CI/CD pipeline to deploy a Node.js application to AWS ECS (Elastic Container Service) using Fargate.
 
 ## Final Deployed URL
-http://34.207.208.63/
+http://34.207.208.63:3000/
 
 
 ## Overview
